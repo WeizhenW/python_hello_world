@@ -2,10 +2,11 @@ $(document).ready(onReady);
 
 function onReady() {
     console.log('in jq');
+    newFruit = $()
     $.ajax({
         type: 'POST',
         url: '/',
-        data: 4
+        data: {'fruit': 'orange'}
     }).then(() => {
         $.ajax({
             type: 'GET',

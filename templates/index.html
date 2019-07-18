@@ -9,11 +9,13 @@
     <title>Python Flask Hello World</title>
 </head>
 <body>
-    <h1>Server response</h1>
+    <h1>Server response: the fruit you picked is</h1>
     <ul>
-        {% for num in response %}
-            <li>{{ num }}</li>
+        {% for fruit in response %}
+            <li>{{ fruit[1] }}</li>
         {% endfor %}
     </ul>
+    <h2>Input the fruit</h2>
+    <input class="fruitInput" placeholder="fruit name">
 </body>
 </html>
